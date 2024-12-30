@@ -115,37 +115,37 @@ LeftAnkleBreakMultiplier := 0.5
 
 if (AutoLowerGraphics != true and AutoLowerGraphics != false)
 	{
-	msgbox, AutoLowerGraphics must be set to true or false! (check your spelling)
+	msgbox, AutoLowerGraphics harus di set ke true atau false! (Perhatikan Penulisan)
 	exitapp
 	}
 	
 if (AutoEnableCameraMode != true and AutoEnableCameraMode != false)
 	{
-	msgbox, AutoEnableCameraMode must be set to true or false! (check your spelling)
+	msgbox, AutoEnableCameraMode harus di set ke true atau false! (Perhatikan Penulisan)
 	exitapp
 	}
 	
 if (AutoZoomInCamera != true and AutoZoomInCamera != false)
 	{
-	msgbox, AutoZoomInCamera must be set to true or false! (check your spelling)
+	msgbox, AutoZoomInCamera harus di set ke true atau false! (Perhatikan Penulisan)
 	exitapp
 	}
 	
 if (AutoLookDownCamera != true and AutoLookDownCamera != false)
 	{
-	msgbox, AutoLookDownCamera must be set to true or false! (check your spelling)
+	msgbox, AutoLookDownCamera harus di set ke true atau false! (Perhatikan Penulisan)
 	exitapp
 	}
 	
 if (AutoBlurCamera != true and AutoBlurCamera != false)
 	{
-	msgbox, AutoBlurCamera must be set to true or false! (check your spelling)
+	msgbox, AutoBlurCamera harus di set ke true atau false! (Perhatikan Penulisan)
 	exitapp
 	}
 	
 if (ShakeMode != "Navigation" and ShakeMode != "Click")
 	{
-	msgbox, ShakeMode must be set to "Click" or "Navigation"! (check your spelling)
+	msgbox, ShakeMode harus di set ke "Click" atau "Navigation"! (Perhatikan Penulisan)
 	exitapp
 	}
 
@@ -158,7 +158,7 @@ if WinActive("Roblox")
 	}
 else
 	{
-	msgbox, Dimana Robloxnya Dek?
+	msgbox, Dimana Robloxnya Dek? Buka Robloxnya Dulu.
 	exitapp
 	}
 	

@@ -8,108 +8,116 @@ CoordMode, Tooltip, Relative
 CoordMode, Pixel, Relative
 CoordMode, Mouse, Relative
 
-;     GENERAL SETTINGS     ====================================================================================================;
-
+; GENERAL SETTINGS
 ; Set to true to automatically lower graphics to 1
 AutoLowerGraphics := false
-AutoGraphicsDelay := 50
+AutoGraphicsDelay := 30
 
 ; Set to true to automatically zoom in the camera
 AutoZoomInCamera := true
-AutoZoomDelay := 50
+AutoZoomDelay := 30
 
 ; Set to true to check for camera mode and enable it
 AutoEnableCameraMode := true
-AutoCameraDelay := 5
+AutoCameraDelay := 3
 
 ; Set to true to automatically look down
 AutoLookDownCamera := true
-AutoLookDelay := 100
+AutoLookDelay := 80
 
 ; Set to true to automatically blur the camera
 AutoBlurCamera := false
-AutoBlurDelay := 50
+AutoBlurDelay := 30
 
 ; How long to wait after fishing before restarting
 RestartDelay := 400
-
 ; How long to hold the cast for before releasing
-HoldRodCastDuration := 200
-
+HoldRodCastDuration := 180
 ; How long to wait for the bobber to land in water
-WaitForBobberDelay := 200
+WaitForBobberDelay := 150
 
 ; Set this to your navigation key, IMPORTANT
 NavigationKey := "\"
 
-;     SHAKE SETTINGS     ====================================================================================================;
-
+; SHAKE SETTINGS
 	;     SHAKE CLICK SETTINGS     ====================================================================================================;
 
 ; Change to "Navigation" or "Click"
 ShakeMode := "Navigation"
-
 ; Color range to scan for fish bar
-FishBarColorTolerance := 0
-
+FishBarColorTolerance := 3
 ; Seconds for click shake to be considered failed
 ClickShakeFailsafe := 6
+
 ; Color range to scan for "shake" text
-ClickShakeColorTolerance := 1
+ClickShakeColorTolerance := 0
+
 ; Delay between each scan in miliseconds
-ClickScanDelay := 50
+ClickScanDelay := 30
+
 ; How many scans before clicking regardless of repeats
-RepeatBypassCounter := 10
+RepeatBypassCounter := 8
 
 	;     SHAKE NAVIGATION SETTINGS     ====================================================================================================;
 
 ; Seconds for navigation shake to be considered failed
 NavigationShakeFailsafe := 6
-; Delay between each "S+Enter" in miliseconds
-NavigationSpamDelay := 1
 
-;     MINIGAME SETTINGS     ====================================================================================================;
+; Delay between each "S+Enter" in miliseconds
+NavigationSpamDelay := 3
+
+; MINIGAME SETTINGS
 
 ; Bar size is automatically calculated, set manual value to override
 ManualBarSize := 0
-; Seconds for calculation to be considered failed
-BarCalculationFailsafe := 3
-; Color range to scan for initial white bar
-BarSizeCalculationColorTolerance := 3
 
+; Seconds for calculation to be considered failed
+BarCalculationFailsafe := 10
+; Color range to scan for initial white bar
+BarSizeCalculationColorTolerance := 5
 ; Color range to scan for minigame white bar
-WhiteBarColorTolerance := 3
+WhiteBarColorTolerance := 5
+
 ; Color range to scan for minigame arrow
-ArrowColorTolerance := 3
+ArrowColorTolerance := 0
+
 ; Amount of clicks per action cycle
 StabilizerLoop := 10
+
 ; Ratio for bar side maximum hold (1 = max bar|0.5 = half bar)
 SideBarRatio := 0.7
+
 ; Multiplier for how long to wait at the sides to prevent bounce
 SideBarWaitMultiplier := 3.8
 
 ; Strength for moving right in correct zone
-StableRightMultiplier := 2
+StableRightMultiplier := 1.8
+
 ; Counter strafe after moving right in correct zone
-StableRightDivision := 1.3
+StableRightDivision := 1.5
+
 ; Strength for moving left in correct zone
-StableLeftMultiplier := 2
+StableLeftMultiplier := 1.8
+
 ; Counter strafe after moving left in correct zone
-StableLeftDivision := 1.3
+StableLeftDivision := 1.5
 
 ; Strength for moving right when in wrong zone
-UnstableRightMultiplier := 2
-; Counter strafe after moving right in wrong zone
-UnstableRightDivision := 1.3
-; Strength for moving left when in wrong zone
-UnstableLeftMultiplier := 2
-; Counter strafe after moving left in wrong zone
-UnstableLeftDivision := 1.3
+UnstableRightMultiplier := 1.8
 
+; Counter strafe after moving right in wrong zone
+UnstableRightDivision := 1.5
+
+; Strength for moving left when in wrong zone
+UnstableLeftMultiplier := 1.8
+
+; Counter strafe after moving left in wrong zone
+UnstableLeftDivision := 1.5
 ; Strength for moving right after a shift in the middle
-RightAnkleBreakMultiplier := 0.5
+RightAnkleBreakMultiplier := 0.4
+
 ; Strength for moving left after a shift in the middle
-LeftAnkleBreakMultiplier := 0.5
+LeftAnkleBreakMultiplier := 0.4
 
 ;====================================================================================================;
 
